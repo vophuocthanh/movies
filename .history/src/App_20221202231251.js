@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import "swiper/scss";
-import Banner from "./components/banner/Banner";
 import MovieList from "./components/movie/MovieList";
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         <span className="text-primary">Home</span>
         <span>Movies</span>
       </header>
-      <Banner></Banner>
       <section className="pb-20 movies-layout page-container">
         <h2 className="mb-10 text-3xl font-bold text-white capitalize">
           Now Playing
