@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    // đường dẫn góc
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["/src/components/*"]
+    }
+  }
+}

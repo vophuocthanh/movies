@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    // đường dẫn góc
+    "baseUrl": "src"
+  }
+}
