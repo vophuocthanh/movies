@@ -94,7 +94,7 @@ const MoviePage = () => {
           ))}
         </div>
       )}
-      <div className='grid gap-10 sm:grid-cols-4 '>
+      <div className='grid grid-cols-4 gap-10 sm:grid-cols-1'>
         {!loading &&
           movies.length > 0 &&
           movies.map((item) => (
