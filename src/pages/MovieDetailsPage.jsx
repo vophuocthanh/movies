@@ -37,7 +37,7 @@ const MovieDetailsPage = () => {
         {title}
       </h1>
       {genres.length > 0 && (
-        <div className='flex text-center flex-col justify-center items-center mb-10 gap-x-5 '>
+        <div className='flex text-center sm:flex flex-col sm:flex-row justify-center items-center mb-10 gap-x-5 '>
           {genres.map((item) => (
             <span
               key={item.id}

@@ -66,3 +66,18 @@
     background-position-x: -200%;
   }
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding-top: 100px;
+  }
+}
+.main-content {
+  padding-top: 150px;
+}
