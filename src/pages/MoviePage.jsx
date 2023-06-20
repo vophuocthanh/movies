@@ -57,7 +57,7 @@ const MoviePage = () => {
   // const { page, total_pages } = data;
   // console.log("MovieList ~ movies ", movies);
   return (
-    <div className='py-10 page-container'>
+    <div className='sm:py-10 pb-10 page-container'>
       <div className='flex mb-10'>
         <div className='flex-1'>
           <input
@@ -94,7 +94,7 @@ const MoviePage = () => {
           ))}
         </div>
       )}
-      <div className='grid gap-10 sm:grid-cols-4 '>
+      <div className='grid gap-10 sm:grid-cols-4 overflow-x-hidden'>
         {!loading &&
           movies.length > 0 &&
           movies.map((item) => (
@@ -103,14 +103,14 @@ const MoviePage = () => {
       </div>
       {/* phần này là phần phân trang */}
       {/* react-panigate */}
-      <div className='mt-10'>
+      <div className='mt-10 '>
         <ReactPaginate
           breakLabel='...'
-          nextLabel='next >'
+          nextLabel='>>'
           onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
+          pageRangeDisplayed={3}
           pageCount={pageCount}
-          previousLabel='< previous'
+          previousLabel='<<'
           renderOnZeroPageCount={null}
           // class là code nơi file index.scss
           className='pagination'

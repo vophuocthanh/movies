@@ -20,6 +20,13 @@
     width: 300px;
     height: auto;
   }
+  @media screen and (max-width: 767px) {
+    .movie-list .swiper-slide {
+      width: 340px;
+      height: auto;
+      margin-left: 6px;
+    }
+  }
   .banner .swiper {
     height: 100%;
   }
@@ -32,6 +39,15 @@
   gap: 20px;
   .selected {
     @apply text-primary;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pagination {
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
   }
 }
 .skeleton {
